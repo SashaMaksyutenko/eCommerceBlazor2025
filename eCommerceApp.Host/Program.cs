@@ -16,9 +16,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddInfrastructureService(builder.Configuration);
 builder.Services.AddApllicationService();
-builder.Services.AddCors(builder=>{
-    builder.AddDefaultPolicy(options=>{
-        options.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials();
+builder.Services.AddCors(builder =>
+{
+    builder.AddDefaultPolicy(options =>
+    {
+        options.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:7025").AllowCredentials();
     });
 });
 try

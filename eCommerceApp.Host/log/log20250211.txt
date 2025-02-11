@@ -1,0 +1,320 @@
+2025-02-11 19:26:56.825 +02:00 [INF] Application is building...
+2025-02-11 19:26:56.978 +02:00 [ERR] Application failed to start...
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host/Program.cs:line 28
+2025-02-11 19:27:32.469 +02:00 [INF] Application is building...
+2025-02-11 19:27:32.580 +02:00 [ERR] Application failed to start...
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host/Program.cs:line 28
+2025-02-11 19:29:13.140 +02:00 [INF] Application is building...
+2025-02-11 19:29:13.348 +02:00 [INF] User profile is available. Using '/Users/sashamaksyutenko/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-02-11 19:29:13.407 +02:00 [INF] Application is running...
+2025-02-11 19:29:13.433 +02:00 [INF] Creating key {5d82b80d-9d2f-4857-947f-61cc51929fe3} with creation date 2025-02-11 17:29:13Z, activation date 2025-02-11 17:29:13Z, and expiration date 2025-05-12 17:29:13Z.
+2025-02-11 19:29:13.436 +02:00 [WRN] No XML encryptor configured. Key {5d82b80d-9d2f-4857-947f-61cc51929fe3} may be persisted to storage in unencrypted form.
+2025-02-11 19:29:13.437 +02:00 [INF] Writing data to file '/Users/sashamaksyutenko/.aspnet/DataProtection-Keys/key-5d82b80d-9d2f-4857-947f-61cc51929fe3.xml'.
+2025-02-11 19:29:13.489 +02:00 [INF] Now listening on: http://localhost:5286
+2025-02-11 19:29:13.492 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-11 19:29:13.492 +02:00 [INF] Hosting environment: Development
+2025-02-11 19:29:13.492 +02:00 [INF] Content root path: /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host
+2025-02-11 19:29:13.898 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/index.html - null null
+2025-02-11 19:29:14.058 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 105.9040 ms
+2025-02-11 19:29:14.066 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/index.html - 200 null text/html;charset=utf-8 168.1615ms
+2025-02-11 19:29:14.104 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/swagger-ui-standalone-preset.js - null null
+2025-02-11 19:29:14.106 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/swagger-ui.css - null null
+2025-02-11 19:29:14.107 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/swagger-ui-bundle.js - null null
+2025-02-11 19:29:14.160 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-02-11 19:29:14.160 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-02-11 19:29:14.163 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/swagger-ui-standalone-preset.js - null null
+2025-02-11 19:29:14.165 +02:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 58.0621 ms
+2025-02-11 19:29:14.166 +02:00 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 52.9981 ms
+2025-02-11 19:29:14.167 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 64.595ms
+2025-02-11 19:29:14.167 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/swagger-ui.css - 200 143943 text/css 61.2816ms
+2025-02-11 19:29:14.176 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-02-11 19:29:14.192 +02:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 24.5376 ms
+2025-02-11 19:29:14.205 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 41.899ms
+2025-02-11 19:29:14.222 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-02-11 19:29:14.223 +02:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 109.9333 ms
+2025-02-11 19:29:14.223 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 115.7448ms
+2025-02-11 19:29:14.359 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/v1/swagger.json - null null
+2025-02-11 19:29:14.510 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 149.0430 ms
+2025-02-11 19:29:14.512 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 152.797ms
+2025-02-11 19:29:14.737 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/swagger-ui-bundle.js - null null
+2025-02-11 19:29:14.741 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-02-11 19:29:14.742 +02:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 4.3004 ms
+2025-02-11 19:29:14.742 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 5.0273ms
+2025-02-11 19:38:51.807 +02:00 [INF] Application is shutting down...
+02-11 19:36:20.501 +02:00 [ERR] Application failed to start...
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host/Program.cs:line 28
+2025-02-11 19:39:06.000 +02:00 [INF] Application is building...
+2025-02-11 19:39:06.207 +02:00 [INF] User profile is available. Using '/Users/sashamaksyutenko/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-02-11 19:39:06.256 +02:00 [INF] Application is running...
+2025-02-11 19:39:06.304 +02:00 [INF] Now listening on: http://localhost:5286
+2025-02-11 19:39:06.306 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-11 19:39:06.306 +02:00 [INF] Hosting environment: Development
+2025-02-11 19:39:06.306 +02:00 [INF] Content root path: /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host
+2025-02-11 19:39:06.876 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/index.html - null null
+2025-02-11 19:39:07.070 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 148.6870 ms
+2025-02-11 19:39:07.125 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/index.html - 200 null text/html;charset=utf-8 246.4669ms
+2025-02-11 19:39:07.267 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/v1/swagger.json - null null
+2025-02-11 19:39:07.432 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 158.0420 ms
+2025-02-11 19:39:07.433 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 166.274ms
+2025-02-11 22:49:40.645 +02:00 [INF] Application is shutting down...
+02-11 22:44:20.202 +02:00 [ERR] Application failed to start...
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host/Program.cs:line 28
+2025-02-11 22:44:35.312 +02:00 [INF] Application is building...
+2025-02-11 22:44:35.461 +02:00 [ERR] Application failed to start...
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host/Program.cs:line 28
+2025-02-11 22:51:08.807 +02:00 [INF] Application is building...
+2025-02-11 22:51:08.986 +02:00 [ERR] Application failed to start...
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host/Program.cs:line 28
+2025-02-11 22:58:10.441 +02:00 [INF] Application is building...
+2025-02-11 22:58:10.558 +02:00 [ERR] Application failed to start...
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host/Program.cs:line 28
+2025-02-11 23:00:16.453 +02:00 [INF] Application is building...
+2025-02-11 23:00:16.572 +02:00 [ERR] Application failed to start...
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host/Program.cs:line 28
+2025-02-11 23:00:32.010 +02:00 [INF] Application is building...
+2025-02-11 23:00:32.117 +02:00 [ERR] Application failed to start...
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host/Program.cs:line 28
+2025-02-11 23:06:06.257 +02:00 [INF] Application is building...
+2025-02-11 23:06:06.760 +02:00 [INF] Application is running...
+2025-02-11 23:06:06.826 +02:00 [ERR] Application failed to start...
+System.InvalidOperationException: Unable to resolve service for type 'Serilog.Extensions.Hosting.DiagnosticContext' while attempting to activate 'Serilog.AspNetCore.RequestLoggingMiddleware'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host/Program.cs:line 41
+2025-02-11 23:06:53.708 +02:00 [INF] Application is building...
+2025-02-11 23:06:53.930 +02:00 [INF] User profile is available. Using '/Users/sashamaksyutenko/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-02-11 23:06:53.976 +02:00 [INF] Application is running...
+2025-02-11 23:06:54.019 +02:00 [INF] Now listening on: http://localhost:5286
+2025-02-11 23:06:54.021 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-11 23:06:54.021 +02:00 [INF] Hosting environment: Development
+2025-02-11 23:06:54.021 +02:00 [INF] Content root path: /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host
+2025-02-11 23:06:54.632 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/index.html - null null
+2025-02-11 23:06:54.777 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 101.1199 ms
+2025-02-11 23:06:54.805 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/index.html - 200 null text/html;charset=utf-8 162.9389ms
+2025-02-11 23:06:54.927 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/v1/swagger.json - null null
+2025-02-11 23:06:55.022 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 92.6407 ms
+2025-02-11 23:06:55.022 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 95.378ms
+2025-02-11 23:07:25.096 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/index.html - null null
+2025-02-11 23:07:25.110 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 3.0393 ms
+2025-02-11 23:07:25.111 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/index.html - 200 null text/html;charset=utf-8 15.9914ms
+2025-02-11 23:07:25.199 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/v1/swagger.json - null null
+2025-02-11 23:07:25.228 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 26.4330 ms
+2025-02-11 23:07:25.229 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 29.5695ms
+2025-02-11 23:07:48.117 +02:00 [INF] Application is shutting down...
+/ECommerceApp/eCommerceApp.Host/Program.cs:line 28
+2025-02-11 23:09:16.105 +02:00 [INF] Application is building...
+2025-02-11 23:09:16.213 +02:00 [ERR] Application failed to start...
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host/Program.cs:line 28
+2025-02-11 23:09:28.482 +02:00 [INF] Application is building...
+2025-02-11 23:09:28.581 +02:00 [ERR] Application failed to start...
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host/Program.cs:line 28
+2025-02-11 23:10:44.106 +02:00 [INF] Application is building...
+2025-02-11 23:10:44.210 +02:00 [ERR] Application failed to start...
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host/Program.cs:line 28
+2025-02-11 23:12:08.898 +02:00 [INF] Application is building...
+2025-02-11 23:12:09.003 +02:00 [ERR] Application failed to start...
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host/Program.cs:line 28
+2025-02-11 23:12:20.240 +02:00 [INF] Application is building...
+2025-02-11 23:12:20.342 +02:00 [ERR] Application failed to start...
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host/Program.cs:line 28
+2025-02-11 23:15:05.793 +02:00 [INF] Application is building...
+2025-02-11 23:15:06.009 +02:00 [INF] Application is running...
+2025-02-11 23:15:06.061 +02:00 [ERR] Application failed to start...
+System.InvalidOperationException: Unable to resolve service for type 'Serilog.Extensions.Hosting.DiagnosticContext' while attempting to activate 'Serilog.AspNetCore.RequestLoggingMiddleware'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host/Program.cs:line 41
+2025-02-11 23:15:44.516 +02:00 [INF] Application is building...
+2025-02-11 23:15:44.695 +02:00 [INF] User profile is available. Using '/Users/sashamaksyutenko/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-02-11 23:15:44.740 +02:00 [INF] Application is running...
+2025-02-11 23:15:44.785 +02:00 [INF] Now listening on: http://localhost:5286
+2025-02-11 23:15:44.787 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-11 23:15:44.787 +02:00 [INF] Hosting environment: Development
+2025-02-11 23:15:44.787 +02:00 [INF] Content root path: /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host
+2025-02-11 23:15:45.037 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/index.html - null null
+2025-02-11 23:15:45.165 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 97.4291 ms
+2025-02-11 23:15:45.198 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/index.html - 200 null text/html;charset=utf-8 159.9231ms
+2025-02-11 23:15:45.322 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/v1/swagger.json - null null
+2025-02-11 23:15:45.430 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 106.3997 ms
+2025-02-11 23:15:45.431 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 109.3136ms
+2025-02-11 23:57:46.362 +02:00 [INF] Application is shutting down...
+02-11 23:17:32.608 +02:00 [ERR] Application failed to start...
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host/Program.cs:line 28
+2025-02-11 23:17:56.876 +02:00 [INF] Application is building...
+2025-02-11 23:17:56.948 +02:00 [ERR] Application failed to start...
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host/Program.cs:line 28
+2025-02-11 23:22:12.148 +02:00 [INF] Application is building...
+2025-02-11 23:22:12.229 +02:00 [ERR] Application failed to start...
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host/Program.cs:line 28
+2025-02-11 23:22:21.254 +02:00 [INF] Application is building...
+2025-02-11 23:22:21.326 +02:00 [ERR] Application failed to start...
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host/Program.cs:line 28
+2025-02-11 23:22:51.216 +02:00 [INF] Application is building...
+2025-02-11 23:22:51.295 +02:00 [ERR] Application failed to start...
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host/Program.cs:line 28
+2025-02-11 23:58:02.156 +02:00 [INF] Application is building...
+2025-02-11 23:58:02.364 +02:00 [INF] User profile is available. Using '/Users/sashamaksyutenko/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-02-11 23:58:02.411 +02:00 [INF] Application is running...
+2025-02-11 23:58:02.451 +02:00 [INF] Now listening on: http://localhost:5286
+2025-02-11 23:58:02.453 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-11 23:58:02.453 +02:00 [INF] Hosting environment: Development
+2025-02-11 23:58:02.453 +02:00 [INF] Content root path: /Users/sashamaksyutenkoadmin/Documents/Blazor2025/ECommerceApp/eCommerceApp.Host
+2025-02-11 23:58:03.131 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/index.html - null null
+2025-02-11 23:58:03.288 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 97.0543 ms
+2025-02-11 23:58:03.301 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/index.html - 200 null text/html;charset=utf-8 170.6777ms
+2025-02-11 23:58:03.446 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/v1/swagger.json - null null
+2025-02-11 23:58:03.555 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 106.5594 ms
+2025-02-11 23:58:03.556 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 109.8805ms
