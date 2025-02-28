@@ -1,3 +1,4 @@
+using System.Web;
 using eCommerceApp.Application.DTOs.Identity;
 using eCommerceApp.Application.Services.Interfaces.Authentication;
 using Microsoft.AspNetCore.Mvc;
@@ -22,7 +23,7 @@ namespace eCommerceApp.Host.Controllers
         [HttpGet("refreshToken/{refreshToken}")]
         public async Task<IActionResult> ReviveToken(string refreshToken)
         {
-            var result = await authenticationService.ReviveToken(refreshToken);
+            var result = await authenticationService.ReviveToken(HttpUtility.UrlDecode(refreshToken));
             return result.Success ? Ok(result) : BadRequest(result);
         }
     }

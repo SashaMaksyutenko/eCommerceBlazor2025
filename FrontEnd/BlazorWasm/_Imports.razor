@@ -1,5 +1,6 @@
 ﻿@using System.Net.Http
 @using System.Net.Http.Json
+@using Microsoft.AspNetCore.Components.Authorization
 @using Microsoft.AspNetCore.Components.Forms
 @using Microsoft.AspNetCore.Components.Routing
 @using Microsoft.AspNetCore.Components.Web
@@ -8,3 +9,17 @@
 @using Microsoft.JSInterop
 @using BlazorWasm
 @using BlazorWasm.Layout
+@using ClientLibrary.Services
+@using ClientLibrary.Helper
+@using ClientLibrary.Models.Authentication
+@using NetcodeHub.Packages.Components.Validations.OnInput
+@inject ICategoryService categoryService
+@inject IProductService productService
+@inject IAuthenticationService authenticationService
+@inject ITokenService tokenService
+@inject NavigationManager NavManager
+@inject AuthenticationStateProvider authStateProvider
+@using Blazored.Typeahead
+@using System.Security.Claims
+@using ClientLibrary.Models.Product
+@using ClientLibrary.Models.Category

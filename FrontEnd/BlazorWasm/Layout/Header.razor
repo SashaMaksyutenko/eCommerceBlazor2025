@@ -1,0 +1,132 @@
+﻿
+<div class="header_section">
+    <div class="container">
+        <div class="containt_main">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <CategoryComponent />
+            </div>
+            <span class="toggle_icon" onclick="openNav()"><img src="images/toggle-icon.png"></span>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CATEGORIES
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+            <div class="main">
+                <!-- Another variation with a button -->
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search this blog">
+                    <BlazoredTypeahead Placeholder="Search Products..." SearchMethod="SearchProducts"
+                        @bind-Value="SelectedProduct">
+                        <SelectedTemplate>
+                            @context.Name
+                        </SelectedTemplate>
+                        <ResultTemplate>
+                            @context.Name
+                        </ResultTemplate>
+                        <NotFoundTemplate>
+                            <span>No Products Found</span>
+                        </NotFoundTemplate>
+                    </BlazoredTypeahead>
+                </div>
+            </div>
+            <div class="header_box">
+                <div class="lang_box ">
+                    <a href="#" title="Language" class="nav-link" data-toggle="dropdown" aria-expanded="true">
+                        <img src="images/flag-uk.png" alt="flag" class="mr-2 " title="United Kingdom"> English <i
+                            class="fa fa-angle-down ml-2" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu ">
+                        <a href="#" class="dropdown-item">
+                            <img src="images/flag-france.png" class="mr-2" alt="flag">
+                            French
+                        </a>
+                    </div>
+                </div>
+                <div class="login_menu">
+                    <ul>
+                        <li><a href="#">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                <span class="padding_10">Cart</span></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span class="padding_10">
+                                    <AuthorizeView>
+                                        <Authorized>
+                                            @context.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value
+                                        </Authorized>
+                                        <NotAuthorized>ACCOUNT</NotAuthorized>
+                                    </AuthorizeView>
+                                    Login
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropdown-menu">
+                    <AutorizeView>
+                        <Authorized>
+                            <div href="#" class="dropdown-item">
+                                <div class="hstack gap-1">
+                                    <i class="fa fa-tasks"></i>
+                                    <a href="authentication/logout">Logout</a>
+                                </div>
+                            </div>
+                        </Authorized>
+                        <NotAuthorized>
+                            <div href="#" class="dropdown-item">
+                                <div class="hstack gap-1">
+                                    <i class="fa fa-tasks"></i>
+                                    <a href="authentication/logout">Logout</a>
+                                </div>
+                            </div>
+                            <div href="#" class="dropdown-item">
+                                <div class="hstack gap-1">
+                                    <i class="fa fa-tasks"></i>
+                                    <a href="authentication/register">Register</a>
+                                </div>
+                            </div>
+                        </NotAuthorized>
+                    </AutorizeView>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@code {
+    
+    IEnumerable<GetProduct> Products = [];
+    private GetProduct _selectedProduct = new();
+    public GetProduct SelectedProduct
+    {
+        get => _selectedProduct;
+        set
+        {
+            if (_selectedProduct != value)
+            {
+                _selectedProduct = value;
+                OnSelectedProductChanged();
+            }
+        }
+    }
+    private void OnSelectedProductChanged()
+    {
+        if (_selectedProduct == null) return;
+        NavManager.NavigateTo($"search-result/{_selectedProduct.Name}");
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        Products = await productService.GetAllAsync();
+    }
+    async Task<IEnumerable<GetProduct>> SearchProducts(string searchText)
+    {
+        return await Task.FromResult(Products.Where(x => x.Name!.Contains(searchText, StringComparison.CurrentCultureIgnoreCase) || x.Description!.Contains(searchText, StringComparison.CurrentCultureIgnoreCase)).ToList());
+    }
+}

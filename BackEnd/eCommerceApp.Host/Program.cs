@@ -1,5 +1,6 @@
 using eCommerceApp.Infrastructure.DependencyInjection;
 using eCommerceApp.Application.DependencyInjection;
+using System.Text.Json.Serialization;
 using Serilog;
 var builder = WebApplication.CreateBuilder(args);
 Log.Logger = new LoggerConfiguration()
@@ -10,7 +11,10 @@ Log.Logger = new LoggerConfiguration()
 // Add services to the container.
 builder.Host.UseSerilog();
 Log.Logger.Information("Application is building...");
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.ReferenceHandler=ReferenceHandler.IgnoreCycles;
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -20,7 +24,7 @@ builder.Services.AddCors(builder =>
 {
     builder.AddDefaultPolicy(options =>
     {
-        options.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:7025").AllowCredentials();
+        options.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:7016").AllowCredentials();
     });
 });
 try
