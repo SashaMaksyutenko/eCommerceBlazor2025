@@ -1,4 +1,4 @@
 namespace ClientLibrary.Models
 {
-    public record ServiceResponse(bool Success = false, string Message = null!, string Token = null!, string RefreshToken = null!);
+    public record ServiceResponse(bool Success = false, string Message = null!);
 }

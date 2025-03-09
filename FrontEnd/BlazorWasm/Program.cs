@@ -6,6 +6,7 @@ using ClientLibrary.Helper;
 using ClientLibrary.Services;
 using Microsoft.AspNetCore.Components.Authorization;
 using BlazorWasm.Authentication;
+using NetcodeHub.Packages.Components.DataGrid;
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
@@ -18,6 +19,9 @@ builder.Services.AddScoped<IProductService,ProductService>();
 builder.Services.AddScoped<IAuthenticationService,AuthenticationService>();
 builder.Services.AddScoped<AuthenticationStateProvider,CustomAuthStateProvider>();
 builder.Services.AddScoped<RefreshTokenHandler>();
+builder.Services.AddScoped<ICartService,CartService>();
+builder.Services.AddScoped<IPaymentMethodService,PaymentMethodService>();
+builder.Services.AddVirtualizationService();
 //builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 builder.Services.AddHttpClient(Constant.ApiClient.Name,option=>{
     option.BaseAddress=new Uri("http://localhost:5286/api/");

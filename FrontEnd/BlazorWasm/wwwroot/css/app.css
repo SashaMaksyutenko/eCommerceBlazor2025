@@ -106,3 +106,6 @@ code {
     right:0;
     top:0;
 }
+.buy_bt{
+    cursor: pointer;
+}

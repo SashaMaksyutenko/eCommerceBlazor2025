@@ -1,10 +1,11 @@
 ﻿@page "/authentication/login"
+@page "/authentication/login/{route}"
 <div class="container-fluid m-5 p-5">
     <div class="row">
         <div class="col-lg-4 offset-4">
             <EditForm Model="Login" Enhance OnValidSubmit="LoginUser">
-                <DataAnnotationsValidator/>
-                @if(string.IsNullOrEmpty(Message))
+                <DataAnnotationsValidator />
+                @if (string.IsNullOrEmpty(Message))
                 {
                     <div class="alert alert-@AlertType">@Message</div>
                 }
@@ -13,11 +14,12 @@
                     <div class="card-body">
                         <div class="form-group">
                             <FloatingText @bind-value="Login.Email" class="form-control" Type="text"
-                            Label="Email Address" Placeholder="John@doe.com" ValidationMessage For="()=>Login.Email"/>
+                                Label="Email Address" Placeholder="John@doe.com" ValidationMessage
+                                For="()=>Login.Email" />
                         </div>
                         <div class="form-group">
-                            <FloatingText @bind-value="Login.Password" class="form-control"
-                            Label="Password" Type="password" ValidationMessage For="()=>Login.Password"/>
+                            <FloatingText @bind-value="Login.Password" class="form-control" Label="Password"
+                                Type="password" ValidationMessage For="()=>Login.Password" />
                         </div>
                     </div>
                     <button class="btn btn-primary" Type="submit">Login</button>
@@ -27,6 +29,7 @@
     </div>
 </div>
 @code {
+    [Parameter] public string Route { get; set; } = null!;
     string AlertType = string.Empty;
     string Message = string.Empty;
     public LoginUser Login { get; set; } = new();
@@ -48,6 +51,6 @@
         Constant.Cookie.Days,
         Constant.Cookie.Path);
         (authStateProvider as CustomAuthStateProvider)!.NotifyAuthenticationState();
-        NavManager.NavigateTo("/", true);
+        NavManager.NavigateTo(Route == null ? "/" : Route, true);
     }
 }

@@ -7,7 +7,7 @@ namespace eCommerceApp.Host.Controllers
     [Route("api/[controller]")]
     public class PaymentController(IPaymentMethodService paymentMethodService) : ControllerBase
     {
-        [HttpGet("payment-methods")]
+        [HttpGet("methods")]
         public async Task<ActionResult<IEnumerable<GetPaymentMethod>>>GetPamentMethods(){
             var methods=await paymentMethodService.GetPaymentMethods();
             if(!methods.Any())
